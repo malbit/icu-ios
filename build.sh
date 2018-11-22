@@ -2,22 +2,22 @@
 ICU_ROOT=$(pwd)
 
 ./configure_i386.sh
-mkdir -p build-i386 && cd build-i386 && make
+mkdir -p build-i386 && cd build-i386 && gnumake
 
 cd $ICU_ROOT
 
 ./configure_x86_64.sh
-mkdir -p build-x86_64 && cd build-x86_64 && make
+mkdir -p build-x86_64 && cd build-x86_64 && gnumake
 
 cd $ICU_ROOT
 
 ./configure_armv7.sh
-mkdir -p build-armv7 && cd build-armv7 && make
+mkdir -p build-armv7 && cd build-armv7 && gnumake
 
 cd $ICU_ROOT
 
 ./configure_armv7s.sh
-mkdir -p build-armv7s && cd build-armv7s && make
+mkdir -p build-armv7s && cd build-armv7s && gnumake
 
 cd $ICU_ROOT
 
